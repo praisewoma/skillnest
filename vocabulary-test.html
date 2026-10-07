@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Vocabulary Test — 20 Questions | SkillNest</title>
+  <meta name="description" content="Test your English vocabulary with 20 questions on word meanings, synonyms, antonyms and words in context. Instant score, answers and explanations.">
+  <meta name="theme-color" content="#0f1b3d">
+  <meta name="author" content="SkillNest">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f1b3d'/><rect x='14' y='34' width='10' height='16' rx='3' fill='%23ffffff'/><rect x='27' y='24' width='10' height='26' rx='3' fill='%23a78bfa'/><rect x='40' y='14' width='10' height='36' rx='3' fill='%232563eb'/></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.className = "js";</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
+        <span class="logo__text">
+          <span class="logo__name" data-brand="name">SkillNest</span>
+          <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="primary-nav" aria-label="Open the menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-typing">Typing <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-typing">
+              <li><a href="typing-test.html">Typing Speed Test</a></li>
+              <li><a href="typing-practice.html">Typing Practice</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-english">English <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-english">
+              <li><a href="english-test.html">English Level Test</a></li>
+              <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
+              <li><a href="grammar-test.html">Grammar Test</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-practice">Practice <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-practice">
+              <li><a href="typing-practice.html">Typing Practice</a></li>
+              <li><a href="english-test.html?mode=practice">English Practice</a></li>
+              <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
+              <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Vocabulary Test</p>
+        <h1>Vocabulary Test</h1>
+        <p>Twenty multiple-choice questions on word meanings, synonyms, antonyms and choosing the
+          right word in context. When you finish you get your score, the questions you got right and
+          wrong, and a short explanation for every answer.</p>
+      </div>
+    </section>
+
+    <section class="section section--gray">
+      <div class="container">
+
+        <noscript>
+          <p class="noscript"><strong>JavaScript is switched off.</strong> The test needs JavaScript
+            to show questions and calculate your score. Please enable it and reload the page.</p>
+        </noscript>
+
+        <div class="tool-toolbar" data-role="mode-switch"></div>
+
+        <div class="quiz-app" id="quiz-app"></div>
+
+        <section class="card card--page mt-3" aria-labelledby="vocab-covers">
+          <h2 id="vocab-covers">What the vocabulary test covers</h2>
+          <ul class="prose">
+            <li><strong>Word meanings</strong> — choosing the definition that matches a word such as
+              abundant, diligent or lucid.</li>
+            <li><strong>Synonyms</strong> — finding the word with the closest meaning, for example a
+              synonym of brave.</li>
+            <li><strong>Antonyms</strong> — finding the opposite, such as the antonym of expand.</li>
+            <li><strong>Words in context</strong> — picking the right word inside a sentence, including
+              commonly confused pairs like affect / effect and rise / raise.</li>
+          </ul>
+          <p class="muted">Each question has four options and is worth one mark. Your percentage is
+            (correct answers ÷ 20) × 100. Retake as often as you like: questions and answer options
+            are shuffled on every attempt.</p>
+        </section>
+
+        <section class="card card--page mt-3" aria-labelledby="vocab-how">
+          <h2 id="vocab-how">How to use your result</h2>
+          <p>A score tells you which words to look at, not how clever you are. After the test:</p>
+          <ol class="prose">
+            <li>Read the explanation for every question you missed.</li>
+            <li>Write one sentence of your own using each word you got wrong.</li>
+            <li>Wait two or three days, then take the test again. Because the order changes, a higher
+              score means the word has actually stuck.</li>
+          </ol>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="grammar-test.html">Grammar test</a>
+            <a class="btn btn--ghost" href="english-test.html">English level test</a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="index.html">
+          <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
+          <span class="logo__text">
+            <span class="logo__name" data-brand="name">SkillNest</span>
+            <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
+          </span>
+        </a>
+        <p class="footer__note">Free practice tools for English, vocabulary, grammar and typing.
+          Everything runs in your browser — no sign-up, no downloads, no ads.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Tests">
+        <h2 class="footer__title">Tests</h2>
+        <ul>
+          <li><a href="typing-test.html">Typing Speed Test</a></li>
+          <li><a href="english-test.html">English Level Test</a></li>
+          <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
+          <li><a href="grammar-test.html">Grammar Test</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Practice">
+        <h2 class="footer__title">Practice</h2>
+        <ul>
+          <li><a href="typing-practice.html">Typing Practice</a></li>
+          <li><a href="english-test.html?mode=practice">English Practice</a></li>
+          <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
+          <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Site">
+        <h2 class="footer__title">Site</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span data-year>2026</span> <span data-brand="name">SkillNest</span>.
+        All questions and texts on this site are written for this project and are provided for practice only.</p>
+      <ul class="footer__legal">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="brand.js" defer></script>
+  <script src="questions.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <script src="vocabulary-test.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

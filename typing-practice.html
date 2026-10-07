@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Typing Practice — Easy, Medium and Hard | SkillNest</title>
+  <meta name="description" content="Practise typing with easy, medium and hard paragraphs. Watch your words per minute, accuracy and elapsed time, reset any time and pick a new paragraph.">
+  <meta name="theme-color" content="#0f1b3d">
+  <meta name="author" content="SkillNest">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f1b3d'/><rect x='14' y='34' width='10' height='16' rx='3' fill='%23ffffff'/><rect x='27' y='24' width='10' height='26' rx='3' fill='%23a78bfa'/><rect x='40' y='14' width='10' height='36' rx='3' fill='%232563eb'/></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.className = "js";</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
+        <span class="logo__text">
+          <span class="logo__name" data-brand="name">SkillNest</span>
+          <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="primary-nav" aria-label="Open the menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-typing">Typing <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-typing">
+              <li><a href="typing-test.html">Typing Speed Test</a></li>
+              <li><a href="typing-practice.html">Typing Practice</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-english">English <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-english">
+              <li><a href="english-test.html">English Level Test</a></li>
+              <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
+              <li><a href="grammar-test.html">Grammar Test</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="menu-practice">Practice <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
+            <ul class="nav-menu" id="menu-practice">
+              <li><a href="typing-practice.html">Typing Practice</a></li>
+              <li><a href="english-test.html?mode=practice">English Practice</a></li>
+              <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
+              <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Typing Practice</p>
+        <h1>Typing Practice</h1>
+        <p>Choose a level, type the paragraph at your own pace and watch your words per minute,
+          accuracy and elapsed time update as you go. There is no countdown — stop whenever you want.</p>
+      </div>
+    </section>
+
+    <section class="section section--gray">
+      <div class="container container--narrow">
+
+        <noscript>
+          <p class="noscript"><strong>JavaScript is switched off.</strong> Typing practice needs
+            JavaScript to measure your keystrokes. Please enable it and reload the page.</p>
+        </noscript>
+
+        <div class="tool-shell" id="typing-app">
+          <div class="tool-toolbar">
+            <div class="field">
+              <label for="typing-level">Difficulty</label>
+              <select id="typing-level" data-role="difficulty">
+                <option value="easy" selected>Easy — short, common words</option>
+                <option value="medium">Medium — longer sentences</option>
+                <option value="hard">Hard — advanced punctuation</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn--primary" data-role="start">Start</button>
+            <button type="button" class="btn btn--ghost" data-role="reset">Reset</button>
+            <button type="button" class="btn btn--ghost" data-role="new">Another paragraph</button>
+            <p class="typing-status" data-role="status" role="status">Press Start, then begin typing.</p>
+          </div>
+
+          <h2 class="visually-hidden">Paragraph to type</h2>
+          <p class="typing-passage" data-role="passage"></p>
+
+          <label class="visually-hidden" for="typing-practice-input">Type the paragraph here</label>
+          <textarea id="typing-practice-input" class="typing-input" data-role="input"
+                    placeholder="Press Start, then type the paragraph here…"
+                    autocomplete="off" autocorrect="off" autocapitalize="off"
+                    spellcheck="false" disabled></textarea>
+
+          <div class="stat-grid typing-stats">
+            <div class="stat">
+              <span class="stat__value" data-role="stat-wpm">0</span>
+              <span class="stat__label">WPM</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-role="stat-accuracy">--</span>
+              <span class="stat__label">Accuracy</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-role="stat-time">00:00</span>
+              <span class="stat__label">Elapsed</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-role="stat-correct">0</span>
+              <span class="stat__label">Correct chars</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-role="stat-incorrect">0</span>
+              <span class="stat__label">Incorrect chars</span>
+            </div>
+          </div>
+
+          <div data-role="results" role="region" aria-label="Typing results" tabindex="-1" hidden></div>
+        </div>
+
+        <section class="card card--page mt-3" aria-labelledby="practice-history">
+          <h2 id="practice-history">Attempts this session</h2>
+          <p class="small muted">Kept in memory for this page visit only. Nothing is uploaded or saved.</p>
+          <div data-role="history"></div>
+        </section>
+
+        <section class="card card--page mt-3" aria-labelledby="practice-levels">
+          <h2 id="practice-levels">What each level means</h2>
+          <div class="table-wrap">
+            <table class="data">
+              <thead><tr><th>Level</th><th>What you type</th><th>Good for</th></tr></thead>
+              <tbody>
+                <tr><td>Easy</td><td>Short sentences with everyday words and simple punctuation.</td>
+                  <td>Learning the key positions and building confidence.</td></tr>
+                <tr><td>Medium</td><td>Longer sentences with commas and varied vocabulary.</td>
+                  <td>Building a steady rhythm across a full line.</td></tr>
+                <tr><td>Hard</td><td>Semicolons, apostrophes and longer, formal sentences.</td>
+                  <td>Accuracy work on punctuation and uncommon words.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small muted mt-2">WPM here is calculated the same way as in the typing test:
+            (characters typed ÷ 5) ÷ minutes. Accuracy is (correct characters ÷ characters typed) × 100.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="typing-test.html">Take the timed typing test</a>
+            <a class="btn btn--ghost" href="vocabulary-test.html?mode=practice">Vocabulary practice</a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="index.html">
+          <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
+          <span class="logo__text">
+            <span class="logo__name" data-brand="name">SkillNest</span>
+            <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
+          </span>
+        </a>
+        <p class="footer__note">Free practice tools for English, vocabulary, grammar and typing.
+          Everything runs in your browser — no sign-up, no downloads, no ads.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Tests">
+        <h2 class="footer__title">Tests</h2>
+        <ul>
+          <li><a href="typing-test.html">Typing Speed Test</a></li>
+          <li><a href="english-test.html">English Level Test</a></li>
+          <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
+          <li><a href="grammar-test.html">Grammar Test</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Practice">
+        <h2 class="footer__title">Practice</h2>
+        <ul>
+          <li><a href="typing-practice.html">Typing Practice</a></li>
+          <li><a href="english-test.html?mode=practice">English Practice</a></li>
+          <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
+          <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Site">
+        <h2 class="footer__title">Site</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span data-year>2026</span> <span data-brand="name">SkillNest</span>.
+        All questions and texts on this site are written for this project and are provided for practice only.</p>
+      <ul class="footer__legal">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="brand.js" defer></script>
+  <script src="typing.js" defer></script>
+  <script src="typing-practice.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
