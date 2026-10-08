@@ -20,5 +20,5 @@ window.SKILLNEST_BRAND = {
     "Free online tests and practice tools for English, vocabulary, grammar and typing.",
 
   // TODO: replace with the email address you actually own before publishing.
-  email: "hello@your-domain.com"
+  email: "praiseosalor@gmail.com"
 };
