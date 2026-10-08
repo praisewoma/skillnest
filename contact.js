@@ -7,7 +7,7 @@
   var form = document.getElementById("contact-form");
   if (!form) return;
 
-  var email = (window.SKILLNEST_BRAND && window.SKILLNEST_BRAND.email) || "hello@your-domain.com";
+  var email = (window.SKILLNEST_BRAND && window.SKILLNEST_BRAND.email) || "praiseosalor@gmail.com";
   var statusEl = document.getElementById("c-status");
   var noteEl = document.getElementById("c-note");
 
