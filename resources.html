@@ -1,257 +1,589 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>English, Grammar, Vocabulary & Typing Resources | SkillNest</title>
-  <meta name="description" content="Explore free English, grammar, vocabulary and typing resources, including grammar tips, commonly confused words, vocabulary strategies and typing techniques.">
-  <meta name="theme-color" content="#0f1b3d">
-  <meta name="author" content="SkillNest">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f1b3d'/><rect x='14' y='34' width='10' height='16' rx='3' fill='%23ffffff'/><rect x='27' y='24' width='10' height='26' rx='3' fill='%23a78bfa'/><rect x='40' y='14' width='10' height='36' rx='3' fill='%232563eb'/></svg>">
-  <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.className = "js";</script>
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to main content</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <header class="site-header" id="top">
+  <title>English, Grammar, Vocabulary & Typing Resources | SkillNest</title>
+
+  <meta name="description" content="Explore practical English grammar tips, common English mistakes, vocabulary-building strategies, effective study habits and typing techniques with SkillNest.">
+
+  <meta name="theme-color" content="#101827">
+  <meta name="author" content="SkillNest">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23101827'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%2388E0C0'%3ES%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
     <div class="container header__inner">
-      <a class="logo" href="index.html">
-        <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
+
+      <a class="logo" href="index.html" aria-label="SkillNest home">
+        <span class="logo__mark" aria-hidden="true">S</span>
         <span class="logo__text">
-          <span class="logo__name" data-brand="name">SkillNest</span>
-          <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
+          <strong data-brand="name">SkillNest</strong>
+          <span data-brand="tagline">Test. Practice. Improve.</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
-              aria-controls="primary-nav" aria-label="Open the menu">
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <button
+        class="nav-toggle"
+        type="button"
+        data-nav-toggle
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+
           <li>
-            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
-                    aria-controls="menu-typing">Typing <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
-            <ul class="nav-menu" id="menu-typing">
-              <li><a href="typing-test.html">Typing Speed Test</a></li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item--dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+              Typing
+            </button>
+            <ul class="nav-dropdown">
+              <li><a href="typing-test.html">Typing Test</a></li>
               <li><a href="typing-practice.html">Typing Practice</a></li>
             </ul>
           </li>
-          <li>
-            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
-                    aria-controls="menu-english">English <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
-            <ul class="nav-menu" id="menu-english">
-              <li><a href="english-test.html">English Level Test</a></li>
+
+          <li class="nav-item--dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+              English
+            </button>
+            <ul class="nav-dropdown">
+              <li><a href="english-test.html">English Test</a></li>
               <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
               <li><a href="grammar-test.html">Grammar Test</a></li>
             </ul>
           </li>
-          <li>
-            <button class="nav-link-btn" type="button" data-menu-toggle aria-expanded="false"
-                    aria-controls="menu-practice">Practice <svg class='nav-caret' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>
-            <ul class="nav-menu" id="menu-practice">
+
+          <li class="nav-item--dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+              Practice
+            </button>
+            <ul class="nav-dropdown">
               <li><a href="typing-practice.html">Typing Practice</a></li>
               <li><a href="english-test.html?mode=practice">English Practice</a></li>
               <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
               <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
             </ul>
           </li>
-          <li><a href="resources.html">Resources</a></li>
+
+          <li><a href="resources.html" aria-current="page">Resources</a></li>
           <li><a href="about.html">About</a></li>
+
         </ul>
       </nav>
+
     </div>
   </header>
 
   <main id="main">
+
     <section class="page-head">
       <div class="container">
-        <p class="breadcrumb"><a href="index.html">Home</a> / Resources</p>
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Resources</span>
+        </nav>
+
         <h1>Free study resources</h1>
-        <p>Short, practical resources to help you improve your English, vocabulary, typing and study habits.</p>
+
+        <p>
+          Build your English skills one step at a time. Explore practical
+          grammar explanations, common English mistakes, vocabulary tips,
+          effective study habits and typing techniques.
+        </p>
+
       </div>
     </section>
 
-    <section class="section section--gray">
+    <section class="section">
       <div class="container">
 
-        <article class="card card--page prose" aria-labelledby="study-tips">
-          <h2 id="study-tips">Study habits that actually work</h2>
-          <ul>
-            <li><strong>Short and regular beats long and rare.</strong> Fifteen minutes a day builds
-              far more than two hours once a month.</li>
-            <li><strong>Test yourself.</strong> Reading a rule feels productive; recalling it without
-              looking is what makes it stick.</li>
-            <li><strong>Space your review.</strong> Look at a rule again after one day, then three,
-              then a week.</li>
-            <li><strong>Learn in sentences, not lists.</strong> A word you met in a sentence is easier
-              to use than a word from a list.</li>
-            <li><strong>Keep an error log.</strong> Write down what you got wrong and why. The same
-              mistakes repeat until you write them down.</li>
-          </ul>
-        </article>
+        <div class="resource-grid">
 
-        <article class="card card--page prose mt-3" aria-labelledby="grammar-ref">
-          <h2 id="grammar-ref">Grammar quick reference</h2>
-          <p>A few rules that come up again and again in the tests.</p>
+          <!-- RESOURCE 1: STUDY HABITS -->
 
-          <h3>for vs since</h3>
-          <p><strong>for</strong> + a length of time (for two hours, for six years).
-             <strong>since</strong> + a starting point (since 2015, since Monday).</p>
+          <article class="card resource-card">
+            <h2>1. Study habits that actually work</h2>
 
-          <h3>fewer vs less</h3>
-          <p><strong>fewer</strong> with countable nouns (fewer chairs, fewer mistakes).
-             <strong>less</strong> with uncountable nouns (less water, less time).</p>
+            <p>
+              Studying for hours does not always mean learning effectively.
+              The way you study can make a big difference in how much you
+              remember.
+            </p>
 
-          <h3>Prepositions of time and place</h3>
-          <div class="table-wrap">
-            <table class="data">
-              <thead><tr><th>Preposition</th><th>Used for</th><th>Examples</th></tr></thead>
-              <tbody>
-                <tr><td>at</td><td>clock times, precise points</td><td>at 7 o'clock, at noon, at the door</td></tr>
-                <tr><td>on</td><td>days and dates, surfaces</td><td>on Monday, on 3 June, on the table</td></tr>
-                <tr><td>in</td><td>months, years, longer periods, enclosed areas</td><td>in July, in 2024, in the garden</td></tr>
-                <tr><td>by</td><td>deadlines and method</td><td>by Friday, by train</td></tr>
-              </tbody>
-            </table>
-          </div>
+            <h3>Use active recall</h3>
 
-          <h3>Subject-verb agreement traps</h3>
-          <ul>
-            <li>Words like <strong>news, information, advice</strong> look plural but are singular:
-              <em>the news is good</em>.</li>
-            <li><strong>Each / every one / neither</strong> take a singular verb:
-              <em>each of them has</em>.</li>
-            <li>With <strong>either … or / neither … nor</strong>, the verb agrees with the subject
-              nearest to it: <em>neither Tom nor his brothers are coming</em>.</li>
-          </ul>
-        </article>
+            <p>
+              Instead of reading the same page repeatedly, close your notes
+              and try to explain what you have learned from memory. Check
+              your notes afterward to identify what you missed.
+            </p>
 
-        <article class="card card--page prose mt-3" aria-labelledby="confused">
-          <h2 id="confused">Commonly confused words</h2>
-          <div class="table-wrap">
-            <table class="data">
-              <thead><tr><th>Words</th><th>Meaning</th><th>Example</th></tr></thead>
-              <tbody>
-                <tr><td>affect / effect</td><td>affect = verb, to influence · effect = noun, a result</td>
-                  <td>The rain affected the match. It had no effect on the score.</td></tr>
-                <tr><td>its / it's</td><td>its = belonging to it · it's = it is</td>
-                  <td>The dog wagged its tail. It's raining.</td></tr>
-                <tr><td>your / you're</td><td>your = belonging to you · you're = you are</td>
-                  <td>Is this your book? You're early.</td></tr>
-                <tr><td>there / their / they're</td><td>place · belonging to them · they are</td>
-                  <td>Put it there. Their bags are ready. They're here.</td></tr>
-                <tr><td>then / than</td><td>then = at that time · than = comparison</td>
-                  <td>Finish this, then rest. Taller than me.</td></tr>
-                <tr><td>rise / raise</td><td>rise = go up on its own · raise = lift something</td>
-                  <td>Prices rose. They raised prices.</td></tr>
-                <tr><td>accept / except</td><td>accept = receive · except = not including</td>
-                  <td>I accept your offer. Everyone except me.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
+            <p><strong>Example:</strong> After learning five new words, write
+              down their meanings without looking at your notes.</p>
 
-        <article class="card card--page prose mt-3" aria-labelledby="vocab-tips">
-          <h2 id="vocab-tips">Building vocabulary</h2>
-          <ul>
-            <li><strong>Learn word families.</strong> From <em>rely</em> you get reliable, reliably,
-              reliability and reliance — five words for the price of one.</li>
-            <li><strong>Meet words in context.</strong> Note the sentence you found the word in, not
-              just the definition.</li>
-            <li><strong>Use each new word within a day.</strong> Write a sentence, say it aloud, or
-              message a friend with it.</li>
-            <li><strong>Group by topic.</strong> Ten words about work, ten about food, ten about
-              travel are easier to recall than thirty random ones.</li>
-          </ul>
-        </article>
+            <h3>Space out your learning</h3>
 
-        <article class="card card--page prose mt-3" aria-labelledby="typing-tips">
-          <h2 id="typing-tips">Typing technique</h2>
-          <ul>
-            <li><strong>Home row first.</strong> Rest your fingers on A S D F and J K L ; and return
-              there after every key.</li>
-            <li><strong>Accuracy before speed.</strong> Speed follows accuracy, not the other way
-              round. Aim for zero errors at a comfortable pace, then push the pace.</li>
-            <li><strong>Sit upright, wrists neutral.</strong> Keep your elbows close to your body and
-              your wrists straight rather than bent upwards.</li>
-            <li><strong>Look at the screen.</strong> Train by touch — it feels slower for a week and
-              then it is much faster.</li>
-            <li><strong>Measure, don't guess.</strong> Take the
-              <a href="typing-test.html">typing test</a> once a week and compare numbers, not feelings.</li>
-          </ul>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="typing-practice.html">Typing practice</a>
-            <a class="btn btn--ghost" href="vocabulary-test.html">Vocabulary test</a>
-          </div>
-        </article>
+            <p>
+              Review information over several days rather than trying to
+              learn everything in one sitting. You could review a topic
+              today, tomorrow, three days later and again the following week.
+            </p>
 
-      </div>
-    </section>
-  </main>
+            <h3>Break large tasks into smaller ones</h3>
 
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <div>
-        <a class="logo logo--footer" href="index.html">
-          <span class="logo__mark" aria-hidden="true"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M4 20h16'/><rect x='5' y='12' width='4' height='5' rx='1'/><rect x='11' y='8' width='4' height='9' rx='1'/><rect x='17' y='4' width='3' height='13' rx='1'/></svg></span>
-          <span class="logo__text">
-            <span class="logo__name" data-brand="name">SkillNest</span>
-            <span class="logo__tag" data-brand="tagline">Test. Practice. Improve.</span>
-          </span>
-        </a>
-        <p class="footer__note">Free practice tools for English, vocabulary, grammar and typing.
-          Everything runs in your browser — no sign-up, no downloads, no ads.</p>
-      </div>
+            <p>
+              Instead of setting a goal to study English for three hours,
+              start with a specific task, such as learning ten words or
+              completing one grammar exercise.
+            </p>
 
-      <nav class="footer__col" aria-label="Tests">
-        <h2 class="footer__title">Tests</h2>
-        <ul>
-          <li><a href="typing-test.html">Typing Speed Test</a></li>
-          <li><a href="english-test.html">English Level Test</a></li>
-          <li><a href="vocabulary-test.html">Vocabulary Test</a></li>
-          <li><a href="grammar-test.html">Grammar Test</a></li>
-        </ul>
-      </nav>
+            <h3>Test yourself regularly</h3>
 
-      <nav class="footer__col" aria-label="Practice">
-        <h2 class="footer__title">Practice</h2>
-        <ul>
-          <li><a href="typing-practice.html">Typing Practice</a></li>
-          <li><a href="english-test.html?mode=practice">English Practice</a></li>
-          <li><a href="vocabulary-test.html?mode=practice">Vocabulary Practice</a></li>
-          <li><a href="grammar-test.html?mode=practice">Grammar Practice</a></li>
-        </ul>
-      </nav>
+            <p>
+              Practice questions help you discover what you understand and
+              what needs more attention.
+            </p>
 
-      <nav class="footer__col" aria-label="Site">
-        <h2 class="footer__title">Site</h2>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-          <li><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
-      </nav>
-    </div>
+            <p>
+              <a href="english-test.html">Try the free English test</a>
+              to review your knowledge.
+            </p>
+          </article>
 
-    <div class="container footer__bottom">
-      <p>&copy; <span data-year>2026</span> <span data-brand="name">SkillNest</span>.
-        All questions and texts on this site are written for this project and are provided for practice only.</p>
-      <ul class="footer__legal">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="disclaimer.html">Disclaimer</a></li>
-      </ul>
-    </div>
-  </footer>
 
-  <script src="brand.js" defer></script>
-  <script src="script.js" defer></script>
-</body>
-</html>
+          <!-- RESOURCE 2: GRAMMAR QUICK REFERENCE -->
+
+          <article class="card resource-card">
+            <h2>2. English grammar quick reference</h2>
+
+            <p>
+              These simple grammar rules can help you avoid common errors
+              in everyday speaking and writing.
+            </p>
+
+            <h3>For and since</h3>
+
+            <p>
+              Use <strong>for</strong> to describe a period of time.
+              Use <strong>since</strong> to identify when something began.
+            </p>
+
+            <ul>
+              <li>Correct: I have studied English for three years.</li>
+              <li>Correct: I have studied English since 2023.</li>
+            </ul>
+
+            <h3>Fewer and less</h3>
+
+            <p>
+              Use <strong>fewer</strong> with things you can count individually.
+              Use <strong>less</strong> with uncountable amounts.
+            </p>
+
+            <ul>
+              <li>Correct: There are fewer students today.</li>
+              <li>Correct: I have less time this afternoon.</li>
+            </ul>
+
+            <h3>Subject–verb agreement</h3>
+
+            <p>
+              In the simple present tense, singular third-person subjects
+              usually take a verb ending in <strong>-s</strong> or
+              <strong>-es</strong>.
+            </p>
+
+            <ul>
+              <li>Correct: She works every morning.</li>
+              <li>Incorrect: She work every morning.</li>
+              <li>Correct: They work every morning.</li>
+            </ul>
+
+            <h3>Common prepositions</h3>
+
+            <ul>
+              <li>At 7 o'clock.</li>
+              <li>On Monday.</li>
+              <li>In October.</li>
+              <li>Interested in learning.</li>
+              <li>Good at mathematics.</li>
+            </ul>
+
+            <p>
+              Some prepositions depend on the expression being used, so
+              learning them in complete phrases is often helpful.
+            </p>
+
+            <p>
+              <a href="grammar-test.html">Test your grammar knowledge</a>.
+            </p>
+          </article>
+
+
+          <!-- RESOURCE 3: COMMON ENGLISH MISTAKES -->
+
+          <article class="card resource-card">
+            <h2>3. Common English mistakes and their corrections</h2>
+
+            <p>
+              Small grammatical errors can affect how clearly you communicate.
+              Learn these common corrections and practice using them.
+            </p>
+
+            <h3>Incorrect: She don't like rice.</h3>
+            <p><strong>Correct:</strong> She doesn't like rice.</p>
+
+            <p>
+              Use <strong>doesn't</strong> with he, she and it in the simple
+              present negative. Use <strong>don't</strong> with I, you, we
+              and they.
+            </p>
+
+            <h3>Incorrect: I am having 21 years.</h3>
+            <p><strong>Correct:</strong> I am 21 years old.</p>
+
+            <p>
+              In English, we normally use the verb <strong>be</strong> to
+              describe someone's age.
+            </p>
+
+            <h3>Incorrect: I discussed about the problem.</h3>
+            <p><strong>Correct:</strong> I discussed the problem.</p>
+
+            <p>
+              The verb <strong>discuss</strong> takes a direct object.
+              In standard usage, you do not need to add
+              <strong>about</strong>.
+            </p>
+
+            <h3>Incorrect: He is more taller than me.</h3>
+            <p><strong>Correct:</strong> He is taller than me.</p>
+
+            <p>
+              Do not normally combine <strong>more</strong> with an
+              adjective that already uses the comparative ending
+              <strong>-er</strong>.
+            </p>
+
+            <h3>Incorrect: I look forward to meet you.</h3>
+            <p><strong>Correct:</strong> I look forward to meeting you.</p>
+
+            <p>
+              In the expression <strong>look forward to</strong>, the word
+              <strong>to</strong> is a preposition. Follow it with a noun
+              or the <strong>-ing</strong> form of a verb.
+            </p>
+
+            <h3>Incorrect: One of my friend is here.</h3>
+            <p><strong>Correct:</strong> One of my friends is here.</p>
+
+            <p>
+              After <strong>one of</strong>, use a plural noun because you
+              are referring to one member of a group.
+            </p>
+
+            <p>
+              <a href="grammar-test.html?mode=practice">Practice English grammar</a>
+              to check your understanding.
+            </p>
+          </article>
+
+
+          <!-- RESOURCE 4: CONFUSED WORDS -->
+
+          <article class="card resource-card">
+            <h2>4. Commonly confused English words</h2>
+
+            <p>
+              Some English words sound alike or look similar but have
+              different meanings. Understanding the difference helps you
+              write more accurately.
+            </p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Words</th>
+                    <th scope="col">Difference</th>
+                    <th scope="col">Example</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Affect / Effect</td>
+                    <td>Affect is usually a verb; effect is usually a noun.</td>
+                    <td>The weather affects my mood. The effect was noticeable.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Its / It's</td>
+                    <td>Its shows possession; it's means it is or it has.</td>
+                    <td>The dog wagged its tail. It's a friendly dog.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Your / You're</td>
+                    <td>Your shows possession; you're means you are.</td>
+                    <td>Your book is here. You're welcome.</td>
+                  </tr>
+
+                  <tr>
+                    <td>There / Their / They're</td>
+                    <td>There refers to a place or introduces a statement; their shows possession; they're means they are.</td>
+                    <td>Put it there. Their house is large. They're ready.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Then / Than</td>
+                    <td>Then relates to time or sequence; than is used for comparisons.</td>
+                    <td>We ate, then left. She is taller than I am.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Accept / Except</td>
+                    <td>Accept means to receive or agree; except means excluding.</td>
+                    <td>I accept your offer. Everyone came except John.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lose / Loose</td>
+                    <td>Lose means to misplace or fail to win; loose means not tight.</td>
+                    <td>Don't lose your keys. This shirt is loose.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Advice / Advise</td>
+                    <td>Advice is a noun; advise is a verb.</td>
+                    <td>Thank you for your advice. I advise you to practice.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Principal / Principle</td>
+                    <td>Principal can mean a school leader or something most important; principle means a rule or belief.</td>
+                    <td>The principal spoke. Honesty is an important principle.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rise / Raise</td>
+                    <td>Rise usually happens without a direct object; raise usually acts on something.</td>
+                    <td>Prices rise. They raise prices.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              <strong>Learning tip:</strong> Write your own sentence for
+              each pair of words. Creating examples helps you remember
+              how to use them.
+            </p>
+
+            <p>
+              <a href="vocabulary-test.html">Take the vocabulary test</a>
+              to practice word meanings.
+            </p>
+          </article>
+
+
+          <!-- RESOURCE 5: VOCABULARY BUILDING -->
+
+          <article class="card resource-card">
+            <h2>5. How to build a stronger English vocabulary</h2>
+
+            <p>
+              A strong vocabulary helps you express your thoughts more
+              clearly, understand what you read and communicate with
+              greater confidence.
+            </p>
+
+            <h3>Learn words in context</h3>
+
+            <p>
+              Do not memorize a word's meaning alone. Learn how it appears
+              in a sentence.
+            </p>
+
+            <p>
+              <strong>Example:</strong> The word <em>reluctant</em> means
+              unwilling or hesitant to do something.
+            </p>
+
+            <p>
+              Example sentence: She was reluctant to speak in front of
+              the audience.
+            </p>
+
+            <h3>Keep a vocabulary notebook</h3>
+
+            <p>For each new word, record:</p>
+
+            <ul>
+              <li>The word and its meaning.</li>
+              <li>One example sentence.</li>
+              <li>A synonym or related word, when useful.</li>
+              <li>The date you learned it.</li>
+            </ul>
+
+            <h3>Learn word families</h3>
+
+            <p>
+              Related words can help you understand how English vocabulary
+              works.
+            </p>
+
+            <ul>
+              <li>Decide — decision — decisive.</li>
+              <li>Educate — education — educational.</li>
+              <li>Communicate — communication — communicative.</li>
+              <li>Create — creation — creative.</li>
+            </ul>
+
+            <p>
+              Notice that related words can have different grammatical
+              roles. For example, <em>create</em> is a verb, while
+              <em>creation</em> is a noun.
+            </p>
+
+            <h3>Use new words regularly</h3>
+
+            <p>
+              Choose three new words each day and use them in your own
+              sentences. Review them later in the week.
+            </p>
+
+            <h3>Read a little every day</h3>
+
+            <p>
+              Reading articles, short stories and educational materials
+              exposes you to vocabulary in natural contexts. When you
+              encounter an unfamiliar word, use the surrounding sentence
+              to make an initial guess, then check a reliable dictionary.
+            </p>
+
+            <p>
+              <a href="vocabulary-test.html?mode=practice">Practice vocabulary</a>
+              and see how well you understand different words.
+            </p>
+          </article>
+
+
+          <!-- RESOURCE 6: TYPING TECHNIQUE -->
+
+          <article class="card resource-card">
+            <h2>6. How to improve your typing speed and accuracy</h2>
+
+            <p>
+              Typing faster is useful, but accuracy should come first.
+              Developing good habits can help you type more comfortably
+              and efficiently.
+            </p>
+
+            <h3>Learn the home-row position</h3>
+
+            <p>
+              On a standard QWERTY keyboard, place the fingers of your
+              left hand on A, S, D and F, and the fingers of your right
+              hand on J, K, L and the semicolon key. Keep your thumbs
+              near the spacebar.
+            </p>
+
+            <h3>Focus on accuracy before speed</h3>
+
+            <p>
+              If you repeatedly make mistakes while trying to type faster,
+              slow down slightly. Build accuracy first, then gradually
+              increase your pace.
+            </p>
+
+            <h3>Practice consistently</h3>
+
+            <p>
+              Even five to ten minutes of focused practice can be useful
+              when done regularly. Try to practice a little each day
+              instead of relying on occasional long sessions.
+            </p>
+
+            <h3>Use a comfortable posture</h3>
+
+            <ul>
+              <li>Sit in a comfortable, supported position.</li>
+              <li>Keep your shoulders relaxed.</li>
+              <li>Position your screen at a comfortable viewing height.</li>
+              <li>Avoid pressing the keys harder than necessary.</li>
+            </ul>
+
+            <h3>Understand your typing results</h3>
+
+            <p>
+              <strong>WPM</strong> means words per minute. It measures
+              typing speed. Accuracy measures how much of your typing
+              is correct.
+            </p>
+
+            <p>
+              A higher WPM is useful, but a fast result with many errors
+              may not be as practical as a slightly slower, more accurate
+              result.
+            </p>
+
+            <p>
+              <a href="typing-test.html">Take a typing speed test</a>
+              to check your current performance.
+            </p>
+
+            <p>
+              <a href="typing-practice.html">Start typing practice</a>
+              and work on your speed and accuracy.
+            </p>
+          </article>
+
+
+          <!-- RESOURCE 7: DAILY ENGLISH PRACTICE -->
+
+          <article class="card resource-card">
+            <h2>7. A simple 15-minute daily English routine</h2>
+
+            <p>
+              You do not need to study everything at once. A short,
+              consistent routine can help you build your skills over time.
+            </p>
+
+            <h3>Minutes 1–5: Vocabulary</h3>
+
+            <p>
+              Learn three new words, check their meanings and write a
+              sentence using each one.
+            </p>
+
+            <h3>Minutes 6–10: Grammar</h3>
+
+            <p>
+              Review one grammar rule and answer a few questions.
+          
